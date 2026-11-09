@@ -1,33 +1,27 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-.Python
-
-# Virtual environments
-.venv/
-venv/
-env/
-ENV/
-
-# Environment and local configuration
+# Secrets
 .env
 .env.*
 !.env.example
-.streamlit/secrets.toml
 
-# Tooling and test caches
+# Python (backend)
+__pycache__/
+*.py[cod]
+.venv/
 .pytest_cache/
-.mypy_cache/
 .ruff_cache/
-.coverage
-htmlcov/
 
-# Generated media
-output/videos/*
-!output/videos/.gitkeep
+# Generated media (videos, posts, thumbnails)
+backend/storage/
 
-# Editor and operating-system files
+# Node (frontend)
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env*.local
+*.tsbuildinfo
+npm-debug.log*
+
+# Editors / OS
 .vscode/
 .idea/
 .DS_Store
